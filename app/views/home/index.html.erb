@@ -1,0 +1,211 @@
+ <nav class="navbar is-dark">
+        <div class="navbar-brand">
+            <a class="logo_icono" href="https://bulma.io">
+                <img src="https://musicpro.bemtorres.win/assets/blogooos.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+            </a>
+            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="">
+                    Home
+                </a>
+                <%= link_to "Guitarras", '/guitarras', class: "navbar-item" %>
+
+                <%= link_to "Bajos", '/bajos', class: "navbar-item" %>
+
+                <%= link_to "Baterias", '/baterias', class: "navbar-item" %>
+
+                 <%= link_to "Accesorios", '/accesorios', class: "navbar-item" %>
+            </div>
+
+            <div class="navbar-end">
+              <button class="btn_carrito">
+                    🛒 <span>$</span><span>15.000</span>
+              </button>   
+
+               <%= link_to "Iniciar Sesion 🤘", '/usuarios/new', class: "btn_inicioSesion" %>
+                   
+             
+                
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <figure class="image">
+           <%= image_tag("banner_mp.png") %>
+        </figure>
+    </section>
+
+    <section class="section">
+        <div class="container has-text-centered">
+            <h2 class="title">Music Pro</h2>
+            <p class="parrafo">
+                ¡Descubre tu potencial musical en Music Pro!
+                Encuentra los instrumentos perfectos para expresar tu pasión por la música.
+                Amplifica tu talento con nuestra amplia selección de guitarras, pianos, baterías y mucho más.
+                ¡Explora nuestro catálogo y desata tu creatividad sonora!
+                <br>
+                En Music Pro, la melodía está en tus manos.
+            </p>
+            <br>
+             <h2 class="title is-1">Guitarristas del mes</h2>
+
+            <div class="columns is-centered" style="padding: 2rem">
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-1by1">
+                                <%= image_tag("jimi_hendrix.jpg")%>
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="center">
+                                <div class="media-content">
+                                    <p class="title is-4">Jimi Hendrix</p>
+                                    <p class="subtitle is-6">The Jimi Hendrix Experience</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                    Jimi Hendrix fue un influyente guitarrista, cantante y compositor estadounidense nacido el 27 de noviembre de 1942 y fallecido el 18 de septiembre de 1970.
+                                    Es considerado uno de los músicos más innovadores y virtuosos en la historia del rock.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by1">
+                                <%= image_tag("robert_fripp.jpg")%>
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="center">
+                                <div class="">
+                                    <p class="title is-6">Robert Fripp</p>
+                                    <p class="subtitle is-6">King Crimson</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                Robert Fripp es un guitarrista, compositor y productor inglés nacido el 16 de mayo de 1946. Es conocido principalmente por ser el fundador y líder de la banda de rock progresivo King Crimson. Fripp es reconocido por su enfoque innovador y experimental de la guitarra, que incluye el uso de técnicas como el "Frippertronics",
+                                una técnica de looping en la que graba capas de sonidos de guitarra en tiempo real.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-1by1">
+                                  <%= image_tag("angus_young.jpg")%>
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="center">
+                                <div class="media-content">
+                                    <p class="title is-4">Angus Young</p>
+                                    <p class="subtitle is-6">AC/DC</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                Angus Young es un guitarrista australiano nacido el 31 de marzo de 1955,
+                                reconocido principalmente como el cofundador y líder de la legendaria banda de rock AC/DC. Es conocido por su distintivo estilo de tocar la guitarra,
+                                caracterizado por su energía, agresividad y su habilidad para crear riffs y solos memorables.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container has-text-centered">
+            <h2 class="title">OFERTAS ROCKERAS</h2>
+
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <figure class="image_vitrina">
+                            <%= image_tag("guitarra1.jpg")%>
+                        </figure>
+                        <p class="title">Guitarra Eléctrica</p>
+                        <p class="subtitle">$50.000</p>
+                        <a class="button">Comprar ahora 🤘</a>
+                    </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <figure class="image_vitrina">
+                            <%= image_tag("guitarra2.jpg")%>
+                        </figure>
+                        <p class="title">Guitarra Acústica</p>
+                        <p class="subtitle">$30.000</p>
+                        <a class="button">Comprar ahora 🤘</a>
+                    </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <figure class="image_vitrina">
+                           <%= image_tag("bateria")%>
+                        </figure>
+                        <p class="title">Bateria Pearl 5/piezas</p>
+                        <p class="subtitle">$120.000</p>
+                        <a class="button">Comprar ahora 🤘</a>
+                    </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <figure class="image_vitrina">
+                            <%= image_tag('bajo')%>
+                        </figure>
+                        <p class="title">Bajo Eléctrico Washburn</p>
+                        <p class="subtitle">$80.000</p>
+                       <a class="button">Comprar ahora 🤘</a>
+                    </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <figure class="image_vitrina">
+                            <%= image_tag('mic')%>
+                        </figure>
+                        <p class="title">Micrófono sennheiser</p>
+                        <p class="subtitle">$150.000</p>
+                        <a class="button">Comprar ahora 🤘</a>
+                    </article>
+                </div>
+            </div>
+
+        
+             <%= link_to "Vitrina 🤘", '/instrumentos/new', class: "btn_inicioSesion" %>
+              <%= link_to "Generar compra", '/compras/new', class: "btn_inicioSesion" %>
+              <%= link_to "Generar pedido", '/pedidos/new', class: "btn_inicioSesion" %>
+        </div>
+    </section>
+
+   
+
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p>
+                    <a href="https://bulma.io">
+                        <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+        <script src="../js/bulma.js"></script>
+</body>

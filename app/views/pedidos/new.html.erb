@@ -1,0 +1,17 @@
+<section class="section">
+  <div class="container">
+    <h1 class="title">Pedido nuevo</h1>
+
+    <%= render "form", pedido: @pedido %>
+
+    <br>
+
+    <div class="field is-grouped">
+      <div class="control">
+        <%= link_to "Lista pedidos", pedidos_path, class: "button is-link" %>
+
+        <%= link_to "Volver",'/', class: "button is-link" %>
+      </div>
+    </div>
+  </div>
+</section>

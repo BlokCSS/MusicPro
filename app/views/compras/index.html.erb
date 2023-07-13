@@ -1,0 +1,17 @@
+<p class="has-text-success"><%= notice %></p>
+
+<h1 class="title">Compras</h1>
+
+<div id="compras">
+  <% @compras.each do |compra| %>
+    <div class="box">
+      <%= render compra %>
+    </div>
+    <p>
+      <%= link_to "Elegir compra", compra, class: "button is-link" %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "Nueva compra", new_compra_path, class: "button is-primary" %>
+<%= link_to "Volver", '/', class: "button is-primary" %>

@@ -1,0 +1,40 @@
+<%= form_with(model: usuario, class: "box") do |form| %>
+  <% if usuario.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(usuario.errors.count, "errores") %> :</h2>
+
+      <ul>
+        <% usuario.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nombre, class: "label" %>
+    <div class="control">
+      <%= form.text_field :nombre, class: "input" %>
+    </div>
+  </div>
+
+  <div class="field">
+    <%= form.label :contrasena, class: "label" %>
+    <div class="control">
+      <%= form.password_field :contrasena, class: "input" %>
+    </div>
+  </div>
+
+  <div class="field">
+    <%= form.label :email, class: "label" %>
+    <div class="control">
+      <%= form.text_field :email, class: "input" %>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="control">
+      <%= form.submit "A rockear", class: "button is-primary" %>
+    </div>
+  </div>
+<% end %>

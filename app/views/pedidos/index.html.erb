@@ -1,0 +1,15 @@
+<p class="has-text-success"><%= notice %></p>
+
+<h1 class="title">Pedidos</h1>
+
+<div id="pedidos">
+  <% @pedidos.each do |pedido| %>
+    <%= render pedido %>
+    <p>
+      <%= link_to "Elegir", pedido, class: "button is-primary is-small" %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "Pedido nuevo", new_pedido_path, class: "button is-link" %>
+<%= link_to "Volver",'/', class: "button is-link" %>

@@ -1,0 +1,12 @@
+<p class="has-text-success"><%= notice %></p>
+
+<div class="box">
+  <%= render @usuario %>
+</div>
+
+<div class="buttons">
+  <%= link_to "Editar", '/usuarios', class: "button is-link" %> |
+  <%= link_to "Volver", '/', class: "button is-link" %>
+
+  <%= button_to "Eliminar", @usuario, method: :delete, class: "button is-danger", data: { confirm: "Are you sure?" } %>
+</div>

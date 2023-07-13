@@ -1,0 +1,40 @@
+<%= form_with(model: pedido, class: "field") do |form| %>
+  <% if pedido.errors.any? %>
+    <div class="notification is-danger">
+      <h2><%= pluralize(pedido.errors.count, "error") %> prohibited this pedido from being saved:</h2>
+
+      <ul>
+        <% pedido.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nombre, class: "label" %>
+    <div class="control">
+      <%= form.text_field :nombre, class: "input" %>
+    </div>
+  </div>
+
+  <div class="field">
+    <%= form.label :direccion, class: "label" %>
+    <div class="control">
+      <%= form.text_field :direccion, class: "input" %>
+    </div>
+  </div>
+
+  <div class="field">
+    <%= form.label :instrumento, class: "label" %>
+    <div class="control">
+      <%= form.text_field :instrumento, class: "input" %>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="control">
+      <%= form.submit 'Guardar', class: "button is-primary" %>
+    </div>
+  </div>
+<% end %>

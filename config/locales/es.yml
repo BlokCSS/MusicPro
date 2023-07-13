@@ -1,0 +1,8 @@
+es:
+  activerecord:
+    errors:
+      models:
+        usuario:
+          attributes:
+            contrasena:
+              too_short: "es demasiado corta (mínimo %{count} caracteres)"

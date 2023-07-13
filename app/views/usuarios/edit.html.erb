@@ -1,0 +1,12 @@
+<h1 class="title">Editar usuario</h1>
+
+<div class="container">
+  <%= render "form", usuario: @usuario %>
+</div>
+
+<br>
+
+<div class="buttons">
+  <%= link_to "Volver", '/', class: "button is-primary" %> |
+  <%= link_to "Lista de usuarios", usuarios_path, class: "button is-link" %>
+</div>

@@ -1,0 +1,47 @@
+<%= form_with(model: instrumento, class: "box") do |form| %>
+  <% if instrumento.errors.any? %>
+    <div class="notification is-danger">
+      <h2>Los siguiente no debe estar en blanco:</h2>
+
+      <ul>
+        <% instrumento.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nombre, class: "label" %>
+    <div class="control">
+      <%= form.text_field :nombre, class: "input" %>
+    </div>
+  </div>
+
+  <div class="field">
+    <%= form.label :tipo, class: "label" %>
+    <div class="control">
+      <%= form.text_field :tipo, class: "input" %>
+    </div>
+  </div>
+
+  <div class="field">
+    <%= form.label :marca, class: "label" %>
+    <div class="control">
+      <%= form.text_field :marca, class: "input" %>
+    </div>
+  </div>
+
+  <div class="field">
+    <%= form.label :precio, class: "label" %>
+    <div class="control">
+      <%= form.text_field :precio, class: "input" %>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="control">
+      <%= form.submit "Guardar", class: "button is-primary" %>
+    </div>
+  </div>
+<% end %>

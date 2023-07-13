@@ -1,0 +1,17 @@
+<p class="has-text-success"><%= notice %></p>
+
+<h1 class="title">Usuarios</h1>
+
+<div id="usuarios">
+  <% @usuarios.each do |usuario| %>
+    <div class="box">
+      <%= render usuario %>
+      <p>
+        <%= link_to "Seleccionar usuario", usuario, class: "button is-link" %>
+      </p>
+    </div>
+  <% end %>
+</div>
+
+<%= link_to "Agregar", new_usuario_path, class: "button is-primary" %>
+<%= link_to "Volver", '/', class: "button is-primary" %>

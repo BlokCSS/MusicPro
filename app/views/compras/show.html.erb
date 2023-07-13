@@ -1,0 +1,10 @@
+<p class="has-text-success"><%= notice %></p>
+
+<%= render @compra %>
+
+<div>
+  <%= link_to "Edit esta compra", edit_compra_path(@compra), class: "button is-link" %> |
+  <%= link_to "Listado de compras", compras_path, class: "button is-link" %>
+
+  <%= button_to "Elimina esta compra", @compra, method: :delete, data: { confirm: 'Are you sure?' }, class: "button is-danger" %>
+</div>
